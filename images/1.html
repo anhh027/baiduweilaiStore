@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style>
+	body{
+		padding: 0;
+		margin: 0;
+	}
+		.header{
+			padding: 0 25px 0 30px;
+			border: 1px solid red;
+			height: 100px;
+			min-width: 995px;
+		}
+		@media screen and (max-width: 1200px){
+
+		}
+		.clf:before,.clf:after{
+			content: '';
+			display: block;
+			clear: both;
+			font-size: 0;
+			line-height: 0;
+			height: 0;
+		}
+		.header-left{
+			float: left;
+			width: 200px;
+			height: 100%;
+			background: blue;
+		}
+		.header-right{
+			float: right;
+			width: 700px;
+			height: 100%;
+			background: green;
+		}
+
+		.banner{
+			margin: 60px auto;
+			position: relative;
+		}
+		.banner-left{
+			width: 60%;
+			overflow: hidden;
+		}
+		.banner-right{
+			width: 40%;
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+		}
+		.banner-left img{
+			width: 100%;
+			float: left;
+		}
+		/*.banner-left a{
+			display: block;
+			float: left;
+		}*/
+		.imgbox{
+			float: left;
+			width: 400%;
+		}
+		.imgbox a{
+			float: left;
+			width: 25%;
+		}
+
+		.banner-right a{
+			float: left;
+			width: 100%;
+		}
+		.banner-right a:nth-child(1)~a{
+			width: 50%;
+		}
+		.banner-right img{
+			float: left;
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div class="header clf">
+		<div class="header-left"></div>
+		<div class="header-right"></div>
+	</div>
+	<div class="banner clf">
+		<div class="banner-left">
+			<div class="imgbox">
+				<a href="#"><img src="56dd272259724.jpg" alt="" /></a>
+				<a href="#"><img src="570db68ed3b3a.jpg" alt="" /></a>
+				<a href="#"><img src="56dd272259724.jpg" alt="" /></a>
+				<a href="#"><img src="570db68ed3b3a.jpg" alt="" /></a>
+			</div>
+		</div>
+		<div class="banner-right">
+			<a href="#" class="home-banner-big"><img src="5715cb01dfaee.png.jpg" alt="图片加载失败"></a>
+				<a href="#" class="home-banner-small"><img src="570db7c678cad.jpg" alt="图片加载失败"></a>
+				<a href="#" class="home-banner-small"><img src="5710e8196457d.jpg" alt="图片加载失败"></a>
+		</div>
+	</div>
+</body>
+</html>
